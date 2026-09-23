@@ -1,0 +1,22 @@
+package com.example.data.entity
+
+import androidx.room.Entity
+import androidx.room.PrimaryKey
+
+enum class TransactionType {
+    INCOME,
+    EXPENSE
+}
+
+@Entity(tableName = "transactions")
+data class TransactionEntity(
+    @PrimaryKey(autoGenerate = true)
+    val id: Long = 0,
+    val title: String,
+    val amount: Double,
+    val type: TransactionType,
+    val category: String,
+    val dateMillis: Long,
+    val monthYear: String, // e.g. "2026-09"
+    val notes: String = ""
+)

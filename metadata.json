@@ -1,0 +1,6 @@
+{
+  "name": "Control Financiero",
+  "description": "Control financiero de ingresos y egresos personales con gráficos interactivos y alertas automáticas de presupuesto mensual.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
